@@ -15,10 +15,10 @@ public class DI_Tarea_7 {
      */
     public static void main(String[] args) {
            
-    Impresora impresora = new Impresora(80);
-    impresora.imprime(60);
+    Impresora impresora = new Impresora(10);
+    impresora.imprime(9);
     impresora.mostrarEstadoToner();
-        
+    
     }
     
 }

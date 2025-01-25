@@ -16,10 +16,12 @@ public class Impresora {
 
     //Constructor
     public Impresora(int capacidadToner) {
+        
         if (capacidadToner < 0) {
-            // Si la capacidad es negativa, se establece como 100
+            //Si la capacidad es negativa, se establece en 100
             this.capacidadToner = 100;  
-            // Cantidad inicial coincide con la capacidad
+            
+            //Cantidad inicial coincide con la capacidad
             this.cantidadToner = 100;   
         } else {
             this.capacidadToner = capacidadToner;
@@ -54,15 +56,16 @@ public class Impresora {
             System.out.println("Paginas restantes: " + cantidadToner);
         }
     }
-
+/*
     //Método para obtener el estado del tóner (porcentaje restante)
     public double estadoToner() {
         return (double) cantidadToner / capacidadToner;
     }
-
+*/
     //Método que muestra el estado del tóner en porcentaje
     public void mostrarEstadoToner() {
-        double estado = estadoToner();
+        double resultado = (double) cantidadToner / capacidadToner;
+        double estado = resultado;
         System.out.println("El estado del toner es: " + (estado * 100) + "%");
     }
 
