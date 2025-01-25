@@ -56,12 +56,7 @@ public class Impresora {
             System.out.println("Paginas restantes: " + cantidadToner);
         }
     }
-/*
-    //Método para obtener el estado del tóner (porcentaje restante)
-    public double estadoToner() {
-        return (double) cantidadToner / capacidadToner;
-    }
-*/
+
     //Método que muestra el estado del tóner en porcentaje
     public void mostrarEstadoToner() {
         double resultado = (double) cantidadToner / capacidadToner;

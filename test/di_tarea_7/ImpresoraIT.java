@@ -47,6 +47,7 @@ public class ImpresoraIT {
      // Test para la creación de una impresora con un tóner positivo
     @Test
     public void testConstructorConCapacidadPositiva() {
+        System.out.println("testConstructorPositivo");
         assertEquals(200, impresoraPositiva.getCapacidadToner());
         assertEquals(200, impresoraPositiva.getCantidadToner());
     }
@@ -54,6 +55,7 @@ public class ImpresoraIT {
     // Test para la creación de una impresora con una capacidad de tóner negativa
     @Test
     public void testConstructorConCapacidadNegativa() {
+        System.out.println("testConstructorNegativo");
         assertEquals(100, impresoraNegativa.getCapacidadToner());
         assertEquals(100, impresoraNegativa.getCantidadToner());
     }
@@ -87,7 +89,8 @@ public class ImpresoraIT {
      */
     @Test
     public void testImprime() {
-     // Imprimir 50 páginas
+        System.out.println("testImprime");
+     // Imprimo 50 páginas para ver si resta al total de la cantidad.
         impresoraPositiva.imprime(50);
 
         // Verifico que la cantidad de tóner haya disminuido correctamente
@@ -95,18 +98,6 @@ public class ImpresoraIT {
 
     }
 
-    /**
-     * Test of estadoToner method, of class Impresora.
-     */
- /*   @Test
-    public void testEstadoToner() {
-        System.out.println("estadoToner");
-        double expResult = 0.0;
-        double result = instance.estadoToner();
-        assertEquals(expResult, result, 0);
-
-    }
-*/
     /**
      * Test of mostrarEstadoToner method, of class Impresora.
      */
