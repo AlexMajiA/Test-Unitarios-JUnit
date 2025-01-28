@@ -63,5 +63,9 @@ public class Impresora {
         double estado = resultado;
         System.out.println("El estado del toner es: " + (estado * 100) + "%");
     }
+    
+    public void pruebaTest(){
+        System.out.println("Prueba para ver si actualiza test métodos o los cambia.");
+    }
 
 }

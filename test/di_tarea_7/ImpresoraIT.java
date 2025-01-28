@@ -36,7 +36,7 @@ public class ImpresoraIT {
     public void setUp() {
        impresoraPositiva = new Impresora(200);
        
-       // Esto no lanzará excepción, sino que establecerá 100 como capacidad
+       //Esto no lanzará excepción, sino que establecerá 100 como capacidad
        impresoraNegativa = new Impresora(-50);  
     }
     
@@ -105,6 +105,16 @@ public class ImpresoraIT {
     public void testMostrarEstadoToner() {
         System.out.println("mostrarEstadoToner");
       
+
+    }
+
+    /**
+     * Test of pruebaTest method, of class Impresora.
+     */
+    @Test
+    public void testPruebaTest() {
+        System.out.println("pruebaTest");
+        impresoraPositiva.pruebaTest();
 
     }
     

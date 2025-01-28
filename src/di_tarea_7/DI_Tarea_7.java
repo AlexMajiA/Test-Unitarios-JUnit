@@ -18,6 +18,7 @@ public class DI_Tarea_7 {
     Impresora impresora = new Impresora(-1);
     impresora.imprime(0);
     impresora.mostrarEstadoToner();
+    impresora.pruebaTest();
     
     }
     
